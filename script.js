@@ -1,5 +1,11 @@
 function indexOfIgnoreCase(s1, s2) {
-  // write your code here
+    if (s2 === "") return 0;   // empty substring always matches at index 0
+    if (s1 === "") return -1;
+
+    const str = s1.toLowerCase();
+    const sub = s2.toLowerCase();
+
+    return str.indexOf(sub);
 }
 
 // Please do not change the code below
